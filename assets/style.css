@@ -29,6 +29,11 @@
      transition: 0.7s;
  }
 
+ .menu {
+     position: absolute;
+     width: 100%;
+ }
+
  .navbar-nav {
      width: 80% !important;
      margin: 0 auto;
@@ -37,7 +42,7 @@
 
  header {
      text-align: center;
-     height: 100vh;
+     height: 300vh;
      background: url(media/header.jpg) no-repeat fixed 50% 50%;
      background-size: cover;
  }
@@ -110,4 +115,3 @@
      color: #e2dedb;
      transition: all 0.3s ease-in-out;
  }
-
