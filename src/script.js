@@ -4,7 +4,7 @@ var typed = new Typed('.typed', {
     typeSpeed: 10
 });
 
-//Skill computation / animation
+//Skill computation / animation it's a mapping.
 const skills = {
     'autodidact-coding-challenge': {
         "target": 50,
@@ -35,13 +35,14 @@ const skills = {
 let timeSkill = 0;
 const duration = 3;
 let runOnce = false;
+const targetChunk = duration * 50; // chunck = tronçon. une partie d'un tout
 const skillUpdate = () => {
     for (const skill in skills) {
-        skills[skill].value += skills[skill].target / (duration * 50)
+        skills[skill].value += skills[skill].target / targetChunk
         document.querySelector('.' + skill).innerHTML = parseInt(skills[skill].value)
     }
     timeSkill++;
-    if (timeSkill < duration * 50) {
+    if (timeSkill < targetChunk) {
         setTimeout(skillUpdate, 20)
     }
 }
@@ -55,3 +56,5 @@ window.addEventListener('scroll', () => {
 
 // AOS
 AOS.init();
+
+
