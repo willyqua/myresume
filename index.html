@@ -8,7 +8,10 @@
     <link rel="shortcut icon" href="/assets/media/icon.png">
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/src/aos/dist/aos.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Jean Scratch - CV </title>
 </head>
 
@@ -34,9 +37,11 @@
             </nav>
         </div>
         <div>
-            <h1>Jean scratch</h1>
+            <h1 class="aos-item" data-aos="fade-down" data-aos-offset="20" data-aos-delay="20" data-aos-duration="2000"
+                data-aos-once="false">Jean scratch</h1>
             <div id="line"></div>
-            <h2>Développeur Front-End</h2>
+            <h2 class="aos-item" data-aos="fade-up" data-aos-offset="200" data-aos-delay="20" data-aos-duration="2000"
+                data-aos-once="false">Développeur Front-End</h2>
 
             <div class="container">
                 <div class="row presentation">
@@ -64,7 +69,8 @@
             </div>
         </div>
 
-        <section id="langages">
+        <section id="langages" class="aos-item" data-aos="fade-up-right" data-aos-offset="200" data-aos-delay="50"
+            data-aos-duration="2000" data-aos-once="true">
             <h3>Langages & Framework</h3>
             <div>
                 <div class="bar"><img src="assets/media/html.png" alt="html-icon">
@@ -125,7 +131,8 @@
             </div>
         </section>
 
-        <section id="formation">
+        <section id="formation" class="aos-item" data-aos="fade-up-left" data-aos-offset="200" data-aos-delay="50"
+            data-aos-duration="2000" data-aos-once="true">
             <h3>FORMATION</h3>
 
             <div>
@@ -187,21 +194,74 @@
                             <span>Certificats</span>
                         </div>
                     </div>
-
                 </div>
             </div>
-
-
-
         </section>
 
+        <section id="parcours">
+            <h3>parcours</h3>
+            <div>
+                <div class="timeline">
+                    <div class="aos-item" data-aos="flip-left" data-aos-offset="200" data-aos-delay="50"
+                        data-aos-duration="2000" data-aos-once="false">
+                        <h4>Freelance - CHEZ MOI</h4>
+                        <h6>2019</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Incidunt ea amet porro maxime sequi id, error reprehenderit illum quas quasi facere
+                            perferendis vero consequatur pariatur repellendus molestias nulla magni eligendi ad
+                            praesentium distinctio! Ea sit odit qui aliquid libero impedit, similique ab dolore eius
+                            earum! Laboriosam perferendis odit nisi eveniet.</p>
+                    </div>
+                </div>
+
+                <div class="timeline">
+                    <div class="aos-item" data-aos="flip-right" data-aos-offset="200" data-aos-delay="50"
+                        data-aos-duration="2000" data-aos-once="false">
+                        <h4>Testeur de contenu - NETFLIX</h4>
+                        <h6>2016-2018</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Incidunt ea amet porro maxime sequi id, error reprehenderit illum quas quasi facere
+                            perferendis vero consequatur pariatur repellendus molestias nulla magni eligendi ad
+                            praesentium distinctio! Ea sit odit qui aliquid libero impedit, similique ab dolore eius
+                            earum! Laboriosam perferendis odit nisi eveniet.</p>
+                    </div>
+                </div>
+
+                <div class="timeline">
+                    <div class="aos-item" data-aos="flip-left" data-aos-offset="200" data-aos-delay="50"
+                        data-aos-duration="2000" data-aos-once="false">
+                        <h4>Vendeur Menuiserie VIAL-MENUISERIE</h4>
+                        <h6>2014-2016</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Incidunt ea amet porro maxime sequi id, error reprehenderit illum quas quasi facere
+                            perferendis vero consequatur pariatur repellendus molestias nulla magni eligendi ad
+                            praesentium distinctio! Ea sit odit qui aliquid libero impedit, similique ab dolore eius
+                            earum! Laboriosam perferendis odit nisi eveniet.</p>
+                    </div>
+                </div>
+
+                <div class="timeline">
+                    <div class="aos-item" data-aos="flip-right" data-aos-offset="200" data-aos-delay="50"
+                        data-aos-duration="000" data-aos-once="false">
+                        <h4>Vendeur Peinture et décoration Seigneurie Gauthier</h4>
+                        <h6>2010-2014</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Incidunt ea amet porro maxime sequi id, error reprehenderit illum quas quasi facere
+                            perferendis vero consequatur pariatur repellendus molestias nulla magni eligendi ad
+                            praesentium distinctio! Ea sit odit qui aliquid libero impedit, similique ab dolore eius
+                            earum! Laboriosam perferendis odit nisi eveniet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
 
     </header>
     <script src=" https://cdn.jsdelivr.net/npm/typed.js@2.0.12">
     </script>
-    <script src="/src/script.js" async type="text/javascript"></script>
+    <script src="/src/script.js" type="text/javascript"></script>
+    <script src="/src/aos/dist/aos.js" type="text/javascript"></script>
 </body>
 
 

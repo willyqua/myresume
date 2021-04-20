@@ -52,3 +52,6 @@ window.addEventListener('scroll', () => {
         skillUpdate()
     }
 })
+
+// AOS
+AOS.init();
